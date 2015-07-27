@@ -1,7 +1,7 @@
 {
   "name": "lambda-ec2-key-generator",
   "description": "Integrates into AWS Cloudformation to automate EC2 Keypair generation",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "private": "true",
   "dependencies": {
     "aws-sdk": "2.1.39"
