@@ -44,8 +44,8 @@ Note that whilst this is passed back as an attribute, for now it is equivalent t
 
 ### Mounting the directory from S3
 
-You can use a tool like [yas3fs](https://github.com/danilop/yas3fs). It makes mounting directories very easy, once installed you can use the following command to mount the S3 Keys Bucket inside your machine. Making key management amongst lots of developers very easy:
+You can use a tool like [s3fs](https://github.com/s3fs-fuse/s3fs-fuse). It makes mounting directories very easy, once installed you can use the following command to mount the S3 Keys Bucket inside your machine. Making key management amongst lots of developers very easy:
 
 ```
-yas3fs s3://stockflare.com-keys/ec2 ~/.aws/s3/MyCompany/sub-dir/keys --topic arn:aws:sns:us-east-1:0123456789876:my-sns-topic --new-queue --mkdir --no-metadata
+s3fs mycompany.com-keys:/ec2 ~/.s3/MyCompany/sub-dir/keys -o passwd_file=~/.s3/MyCompany/credentials
 ```
