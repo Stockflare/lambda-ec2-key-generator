@@ -1,0 +1,6 @@
+keygen:
+  build: .
+  volumes:
+    - .:/stockflare
+  # env_file:
+  #   - ./.env
